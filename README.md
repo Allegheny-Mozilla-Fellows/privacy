@@ -1,7 +1,7 @@
-# Name:
+##### Name:
 privacy
 
-# GitHub link
+##### GitHub link
 git@github.com:Allegheny-Mozilla-Fellows/privacy.git
 
 
