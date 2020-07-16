@@ -3,8 +3,28 @@
 {% block body %}
   <div class="jumbotron text-center">
     <h1>Secure Confidential Bank</h1>
+    <p>Est. 2020</p>
+    <image src="{{ url_for('static', filename='images/thesecure.png')}}" width="200" height="180" style="position:absolute; right:0px; top:43px">
   </div>
-  <div style="text-align: center;">
-  <image src="{{ url_for('static', filename='images/security-banking.jpg')}}">
-  </div>
+    <body>
+      <p>Due to COVID-19, our services may be delayed but we assure you we are doing our best.</p><br><br>
+      <h1><center>Why should you bank with us?</center></h1>
+      <p><center>We offer no minimums with zero fees!</center></p>
+      <p><center>Sign up and open an account today!</center></p><br><br>
+      <h2>Now introducing Secure+</h2>
+      <p>Our latest improvement to making your account and information more secure.</p>
+      <image src="{{ url_for('static', filename='images/photo1.png')}}" width="350" height="280" style="position:absolute; left:0px;">
+      <h2 style ="text-align:right;">Online banking has never been simpler</h2>
+      <p style ="text-align:right;">We improved our interface so making deposits is easier</p>
+      <image src="{{ url_for('static', filename='images/photo2.png')}}" width="350" height="280" style="position:absolute; right:0px;">
+      <h2><center>Our mobile app is better than before</center></h2>
+      <p><center>We've made it easy to manage your account straight from your phone</center></p>
+      <center>
+          <image src="{{ url_for('static', filename='images/photo3.png')}}" width="350" height="380">
+      </center>
+
+
+
+    </body>
+
 {% endblock %}
