@@ -1,12 +1,16 @@
-##### Name:
+##### Project Name:
 Privacy, Ethics and Security.
+
+##### Mozilla Fellow:
+Jordan Wilson
+
 
 ##### GitHub link
 git@github.com:Allegheny-Mozilla-Fellows/privacy.git
 
 
 ##### What is this?
-This lab focuses on the importance of not only security but the ethics involved in hacking a database that could be used to exploit a person. The students will be taken through a tutorial that walks them through how SQL injection works, what it is, and how it can be used to harm someone. After the tutorial, the students are then asked numerous questions that tie back into the theme of privacy, security and ethics.
+Databases contain lots of information of a personal nature. This lab focuses on the ease to hack a database (i.e., maliciously extracting data by a simple means), the necessity of security systems to protect the data, and the ethics involved in the protection from the exploitation of personal information. The students will be taken through a tutorial that walks them through how SQL injection works, what it is, and how it can be used to harm someone. After the tutorial, the students are then asked leading questions to develop understanding into how data, security and ethics must be carefully integrated to procure privacy.
 
 # Introduction
 
@@ -21,13 +25,17 @@ SQL injection attacks occur when a web application does not validate values rece
 
 Below is an example of of query statement being used to run the database on a web application.
 
-``` SELECT * FROM customers WHERE customer_id ='12345' ```
+```
+SELECT * FROM customers WHERE customer_id ='12345'
+```
 
-This is simply a query telling the database to select everything from the customers table where the customer id = 12345.
+This is simply a query instructing the database to select everything from the customers table where the `customer_id` is equal to `12345`.
 
-Suppose someone wanted to inject a SQL statement into the query looking something like this.
+An injection means to add extra SQL code to alter the original query. Below. we add, `; DELETE * FROM customers WHERE 'x' = 'x'`) to the above SQL query extract information which may be violate privacy concerns.
 
-``` SELECT * FROM customers WHERE customer_id='12345'; DELETE * FROM customers WHERE 'x' = 'x' ```.
+```
+SELECT * FROM customers WHERE customer_id='12345'; DELETE * FROM customers WHERE 'x' = 'x'
+```
 
 This SQL injection statement is basically deleting everything that is in the customers table where there is a value being declared.
 
