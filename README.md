@@ -53,3 +53,49 @@ This SQL injection statement is basically deleting everything that is in the cus
 7. There are a few common SQL injection statements. A big one is `or 1=1`. This statement simply makes everything always equal true. it doesn't matter what you put before this, `or 1=1` will always make the statement be true. Try putting this in along with `"` in the username box. Were you able to bypass the login with this SQL statement? If not we can try something else to bypass the login.
 
 8. One more thing that is associated with SQL injection and SQL statements are inline comments. Usually you just add comments when you want to explain code but don't actually want that segment of code to run. For this particular query though, we need put a comment at the end of this statement in order for it to run. Trying putting  `#`, `/*`, `*/`, `--` at the end of the query statement to see if you can get your SQL injection query to work. Did one of them work? Did they all work. Make sure to answer the questions associated with this lab and keep in mind the ethical implications that go along with SQL injection and hacking.
+
+
+### Leading questions
+Students are also expected to answer the following questions based on what they have learned throughout this project.
+
+1. Describe what is meant by ethical hacking in terms of database security and privacy?
+
+2. What are some of the initial problems that allow for the database to be compromised?
+
+3. How safe is the database when hosted by a website?
+
+4. How safe do you think the data should be and why?
+
+5. Describe your experience in hacking the database.
+
+6. What was the leading flaw of the security to protect the database?
+
+7.  What could be done to better protect the database in the future?
+
+8. What data do you see in the database?
+
+9. How could the data be exploited?
+
+10. Describe the consequences of this exploitation.
+
+11. Whose privacy is violated and how?
+
+12. Who could be held liable for any damages caused by data abuse.
+
+### Technical Questions
+
+1. Where is Carrie Medina from?
+
+2. What is Jesse Ortega’s eye color?
+
+3. How old is Teresa Payne?
+
+4. What is Jane Craig’s salary?
+
+5. What is Katherine Jennings relationship status?
+
+6. Who lives on Devrac circle?
+
+7. What ethnicity is Sophie fletcher?
+
+8. What state is James Walsh from?
